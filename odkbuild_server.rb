@@ -5,6 +5,9 @@ class OdkBuild < Sinatra::Application
   disable :run
   set :views, File.dirname(__FILE__) + '/views' # required for dev env
 
+  stylesheet_bundle(:all, %w(jquery-ui-1.7.2.custom styles))
+  javascript_bundle(:all, %w(underscore json2 jquery-ui jquery.ui.core jquery.ui.draggable jquery.ui.mouse jquery.ui.widget jquery.validate jquery.jqmodal.min jquery.jqtip-1.0.0-rc3.min namespace util auth data data-ui i18n modals property-editor workspace-draggable control toolbutton dropdown-menu application))
+
   before do
     content_type :json
   end

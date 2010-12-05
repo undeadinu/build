@@ -10,16 +10,25 @@ GEM
       mime-types
       treetop (>= 1.4.5)
     mime-types (1.16)
+    oyster (0.9.4)
+    packr (3.1.0)
+      oyster
     polyglot (0.3.1)
     pony (1.0)
       mail (> 2.0)
     rack (1.2.1)
+    rainpress (1.0)
     rake (0.8.7)
     rufus-tokyo (1.0.7)
     shotgun (0.8)
       rack (>= 1.0)
     sinatra (1.0)
       rack (>= 1.0)
+    sinatra-bundles (0.4.0)
+      packr
+      rack (>= 1.0)
+      rainpress
+      sinatra (>= 1.0)
     treetop (1.4.8)
       polyglot (>= 0.3.1)
     warden (0.10.7)
@@ -36,4 +45,5 @@ DEPENDENCIES
   rufus-tokyo (= 1.0.7)
   shotgun
   sinatra (= 1.0)
+  sinatra-bundles (= 0.4)
   warden (= 0.10.7)

@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=8" />
     <title>ODK Build</title>
 
-    <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css"/>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/jquery-ui-1.7.2.custom.css"/>
+    <%= stylesheet_bundle_link_tag :all %>
   </head>
   <body>
     <div class="loadingScreen">
@@ -257,29 +256,7 @@
     </div>
 
     <script type="text/javascript" src="/javascripts/jquery-1.4.2.js"></script>
-    <script type="text/javascript" src="/javascripts/underscore.min.js"></script>
-    <script type="text/javascript" src="/javascripts/json2.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery-ui.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery.ui.core.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery.ui.draggable.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery.ui.mouse.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery.ui.widget.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery.validate.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery.jqmodal.min.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery.qtip-1.0.0-rc3.min.js"></script>
-    <script type="text/javascript" src="/javascripts/namespace.js"></script>
-    <script type="text/javascript" src="/javascripts/util.js"></script>
-    <script type="text/javascript" src="/javascripts/auth.js"></script>
-    <script type="text/javascript" src="/javascripts/data.js"></script>
-    <script type="text/javascript" src="/javascripts/data-ui.js"></script>
-    <script type="text/javascript" src="/javascripts/i18n.js"></script>
-    <script type="text/javascript" src="/javascripts/modals.js"></script>
-    <script type="text/javascript" src="/javascripts/property-editor.js"></script>
-    <script type="text/javascript" src="/javascripts/workspace-draggable.js"></script>
-    <script type="text/javascript" src="/javascripts/control.js"></script>
-    <script type="text/javascript" src="/javascripts/toolbutton.js"></script>
-    <script type="text/javascript" src="/javascripts/dropdown-menu.js"></script>
-    <script type="text/javascript" src="/javascripts/application.js"></script>
+    <%= javascript_bundle_include_tag :all %>
 
     <div id="templates">
 
